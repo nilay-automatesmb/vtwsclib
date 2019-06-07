@@ -1,0 +1,21 @@
+<html>
+	<body>
+		Sample Vtiger Webservice operations using JS Client
+		<script src="../../vtwsclib/third-party/js/gears_init.js"></script>
+		<script src="../../vtwsclib/third-party/js/jquery.js"></script>
+		<script src="../../vtwsclib/third-party/js/md5.js"></script>
+		<script src="../../vtwsclib/Vtiger/WSClient.js"></script>
+		<script>
+			function printRes(result){
+				console.log(result);
+			}
+			
+			console.log('Logging In');
+			client = new Vtiger_WSClient('https://app.unifa.itjourney.nl');
+			client.doLogin('admin','GjtnOdGRCzStsliv',printRes);
+		
+		</script>
+	</body>
+	
+
+<html/>
